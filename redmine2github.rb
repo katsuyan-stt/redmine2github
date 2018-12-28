@@ -95,7 +95,7 @@ created_label = []
 
 redmine_issues = []
 
-CSV.foreach(csv_file, :headers => true, :encoding => "Shift_JIS:UTF-8") do |row|
+CSV.foreach(csv_file, :headers => true) do |row|
   redmine_issues.push(row)
 end
 
